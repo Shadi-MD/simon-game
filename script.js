@@ -51,8 +51,7 @@ function nextSequnce() {
   var randomNumber = Math.floor(Math.random() * 4);
   let randomColor = colorArray[randomNumber];
   gamePattern.push(randomColor);
-  console.log("level: " + level);
-  console.log("game: " + gamePattern);
+
 
   $(`#${randomColor}`).fadeIn(100).fadeOut(100).fadeIn(100);
   palySound(randomColor);
